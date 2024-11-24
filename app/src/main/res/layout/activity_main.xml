@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/overlay"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="290dp"
+        android:layout_height="107dp"
+        android:text="@string/recognized_speech"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        tools:ignore="MissingConstraints" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/switch_p"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/toggleButton3"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButton2"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/switch_p"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/toggleButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/switch_p"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/toggleButton5"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButton4"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/switch_p"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/toggleButton6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/switch_p"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/toggleButton7"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButton6"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton6"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/switch_p"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/toggleButton8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton7"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/switch_p"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButton8"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton8"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/switch_p"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="117dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/todo1"
+        android:onClick="startSpeechRecognition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59"
+        app:srcCompat="@drawable/speech" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/todo3"
+        android:onClick="connect"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResult"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton7"
+        app:layout_constraintVertical_bias="0.544"
+        app:srcCompat="@drawable/connect"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
